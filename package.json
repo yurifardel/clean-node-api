@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:staged": "jest",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest --passWithNoTests",
+    "test:staged": "jest --passWithNoTests",
     "prepare": "husky install"
   },
   "keywords": [],
